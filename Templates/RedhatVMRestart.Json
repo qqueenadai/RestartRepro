@@ -149,7 +149,7 @@
 							},
 							"subnet": {
 								"id": "[variables('subnetRef')]"
-							}
+							},
 							"networkSecurityGroup": {
 								"id": "[resourceId('Microsoft.Network/networkSecurityGroups', variables('networkSecurityGroupName'))]"
 							}
