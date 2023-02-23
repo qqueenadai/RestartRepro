@@ -37,7 +37,7 @@
 			}
 		},
 		"dnsNameForPublicIP": {
-			"defaultValue": "[tolower(concat('dns', uniquestring(resourceGroup().id)))]",
+			"defaultValue": "[tolower(concat('dns', variables('vmName')))]",
 			"type": "String",
 			"metadata": {
 				"description": "DNS name for the public IP"
