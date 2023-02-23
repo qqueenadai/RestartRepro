@@ -59,15 +59,15 @@
 		}
 	},
 	"variables": {
-		"nicName": "myVMNic2",
+		"nicName": "myVMNic3",
 		"addressPrefix": "10.0.0.0/16",
 		"subnetName": "Subnet",
 		"subnetPrefix": "10.0.0.0/24",
 		"subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
-		"vmName": "RedhatVMRestart",
+		"vmName": "RedhatVMCrash",
 		"virtualNetworkName": "MyVNET",
-		"publicIPAddressName": "myPublicIP2",
-		"networkSecurityGroupName": "default-NSG2"
+		"publicIPAddressName": "myPublicIP3",
+		"networkSecurityGroupName": "default-NSG3"
 	},
 	"resources": [
 		{
