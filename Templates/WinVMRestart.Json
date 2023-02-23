@@ -59,15 +59,15 @@
 		}
 	},
 	"variables": {
-		"nicName": "myVMNic",
+		"nicName": "myVMNic1",
 		"addressPrefix": "10.0.0.0/16",
 		"subnetName": "Subnet",
 		"subnetPrefix": "10.0.0.0/24",
 		"subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
 		"vmName": "WinVMRestart",
 		"virtualNetworkName": "MyVNET",
-		"publicIPAddressName": "myPublicIP",
-		"networkSecurityGroupName": "default-NSG"
+		"publicIPAddressName": "myPublicIP1",
+		"networkSecurityGroupName": "default-NSG1"
 	},
 	"resources": [
 		{
