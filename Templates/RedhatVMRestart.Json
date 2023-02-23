@@ -65,7 +65,7 @@
 		"subnetPrefix": "10.0.0.0/24",
 		"subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
 		"vmName": "RedhatVMRestart",
-		"virtualNetworkName": "MyVNET2",
+		"virtualNetworkName": "MyVNET",
 		"publicIPAddressName": "myPublicIP2",
 		"networkSecurityGroupName": "default-NSG2"
 	},
