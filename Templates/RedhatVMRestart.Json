@@ -123,10 +123,7 @@
 					{
 						"name": "[variables('subnetName')]",
 						"properties": {
-							"addressPrefix": "[variables('subnetPrefix')]",
-							"networkSecurityGroup": {
-								"id": "[resourceId('Microsoft.Network/networkSecurityGroups', variables('networkSecurityGroupName'))]"
-							}
+							"addressPrefix": "[variables('subnetPrefix')]"
 						}
 					}
 				]
@@ -152,6 +149,9 @@
 							},
 							"subnet": {
 								"id": "[variables('subnetRef')]"
+							}
+							"networkSecurityGroup": {
+								"id": "[resourceId('Microsoft.Network/networkSecurityGroups', variables('networkSecurityGroupName'))]"
 							}
 						}
 					}
