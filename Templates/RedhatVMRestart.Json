@@ -229,7 +229,10 @@
     						"typeHandlerVersion": "2.1",
     						"autoUpgradeMinorVersion": true,
 						"protectedSettings": {
-							"script": "ZWNobyAicmVib290IiB8IGF0IG5vdyArIDEgbWludXRlcw=="
+							"fileUris": [
+								"https://raw.githubusercontent.com/qqueenadai/RestartRepro/main/Scripts/RedhatRestart.sh"
+							],
+							"commandToExecute": "sh RedhatRestart.sh"
 						}
 					}
 				}
