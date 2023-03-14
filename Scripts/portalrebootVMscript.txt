@@ -1,0 +1,21 @@
+$rgName = "labboxtest"
+$name = "portalvm"
+
+New-AzVm `
+    -ResourceGroupName $rgName `
+    -Name $name  `
+    -Location 'East US' `
+    -Size 'Standard_D2s_v3' `
+    -VirtualNetworkName  'myVnet4' `
+    -SubnetName 'mySubnet' `
+    -SecurityGroupName 'myNetworkSecurityGroup4' `
+    -PublicIpAddressName 'myPublicIpAddress4' `
+    -OpenPorts 80,3389
+
+Stop-AzVM -ResourceGroupName $rgName -Name $name 
+Start-AzVM -ResourceGroupName $rgName -Name $name 
+
+
+
+
+  
