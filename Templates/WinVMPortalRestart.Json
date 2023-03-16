@@ -66,7 +66,7 @@
 		}
 	},
 	"variables": {
-		"nicName": "myVMNic",
+		"nicName": "myVMNic4",
 		"addressPrefix": "10.0.0.0/16",
 		"subnetName": "Subnet",
 		"subnetPrefix": "10.0.0.0/24",
