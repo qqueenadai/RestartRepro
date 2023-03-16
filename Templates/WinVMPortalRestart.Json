@@ -73,8 +73,8 @@
 		"subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
 		"vmName": "WinVMRestart2",
 		"virtualNetworkName": "MyVNET",
-		"publicIPAddressName": "myPublicIP6",
-		"networkSecurityGroupName": "default-NSG6"
+		"publicIPAddressName": "myPublicIP4",
+		"networkSecurityGroupName": "default-NSG4"
 	},
 	"resources": [
 		{
