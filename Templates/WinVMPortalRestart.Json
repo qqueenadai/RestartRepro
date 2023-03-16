@@ -4,7 +4,7 @@
 	"metadata": {
 		"description": "Your VM has been restarted from the Portal.",
 		"author": "Queena Dai",
-		"GitHub": "https://github.com/hoverlx/RestartRepro",
+		"GitHub": "https://github.com/qqueenadai/RestartRepro",
 		"deploymentLink": "https://labbox.azurewebsites.net/api/Labbox?url=https://raw.githubusercontent.com/qqueenadai/RestartRepro/main/Templates/WinVMPortalRestart.Json"
 	},
 	"parameters": {
@@ -37,7 +37,7 @@
 			}
 		},
 		"dnsNameForPublicIP": {
-			"defaultValue": "[tolower(concat('dns', uniquestring(resourceGroup().id)))]",
+			"defaultValue": "[tolower(concat('dns',uniqueString(resourceGroup().id), variables('vmName')))]",
 			"type": "String",
 			"metadata": {
 				"description": "DNS name for the public IP"
@@ -240,7 +240,7 @@
 						"autoUpgradeMinorVersion": true,
 						"settings": {
 							"fileUris": [
-								"https://raw.githubusercontent.com/hoverlx/RestartRepro/main/Scripts/WinVMPortalRestart.ps1"
+								"https://raw.githubusercontent.com/qqueenadai/RestartRepro/main/Scripts/WinVMPortalRestart.ps1"
 							]
 						},
 						"protectedSettings": {
