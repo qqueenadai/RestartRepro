@@ -1,1 +1,1 @@
-echo "reboot" | at now + 1 minutes
+echo "shutdown" | at now + 1 minutes
